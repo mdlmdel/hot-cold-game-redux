@@ -15,7 +15,7 @@ const checkColor = color => {
 
 export default function AlertBox({backgroundColor, text}) {
   return (
-    <div style={{backgroundColor, height: 30, width: 100}} className="Guess">
+    <div style={{backgroundColor, height: 90, width: 100}} className="Guess">
       <p style={{textAlign: "center", color: checkColor(backgroundColor)}} className="Guess">{text}</p>
     </div>
   )
