@@ -1,9 +1,10 @@
 // Added to create-react-app version
 
-export const gameFeedback = (text, color) => ({
+export const gameFeedback = (text, color, border) => ({
 type: 'GAME_FEEDBACK',
 text, 
-color
+color, 
+border
 });
 
 const addNumberToGuesses = num => ({type: 'GUESS_NUMBER', num})
@@ -17,7 +18,7 @@ export const guessNumber = num => (dispatch, getState) => {
   dispatch(addNumberToGuesses(num));
   const difference = Math.abs(num - randomNumber) 
   if (difference >= 50) {
-    return dispatch(gameFeedback('Ice cold...', '#10316B'))
+    return dispatch(gameFeedback('Ice cold...', '#10316B', '#ffffff'))
   }
   else if (difference >= 30) {
     return dispatch(gameFeedback('You\'re Cold...', '#0B409C')) 
@@ -31,9 +32,9 @@ export const guessNumber = num => (dispatch, getState) => {
     return dispatch(gameFeedback('You got it!', '#8C0909'))
   }
 export const NEW_GAME = 'NEW_GAME';
-export const newGame = () => ({ type: NEW_GAME });
 export const GUESS_NUMBER = 'GUESS_NUMBER';
 export const GAME_FEEDBACK = 'GAME_FEEDBACK';
+export const newGame = () => ({ type: NEW_GAME });
 
 
 //const ROOT_URL = 'http://localhost:8080';

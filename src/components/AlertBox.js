@@ -1,6 +1,6 @@
 import React from 'react';
 
-const checkColor = color => {
+const checkColor = (color) => {
   switch (color) {
     case '#10316B':
     case '#0B409C': 
@@ -16,7 +16,7 @@ const checkColor = color => {
 export default function AlertBox({backgroundColor, text}) {
   return (
     <div style={{backgroundColor, height: 90, width: 100}} className="Guess">
-      <p style={{textAlign: "center", color: checkColor(backgroundColor)}} className="Guess">{text}</p>
+      <p style={{textAlign: "center", color: checkColor(backgroundColor)}} className="AlertBox">{text}</p>
     </div>
   )
 }

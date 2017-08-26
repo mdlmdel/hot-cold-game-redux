@@ -1,4 +1,4 @@
-# Hot and Cold Guessing Game
+# Hot or Cold Guessing Game
 
 ## Description of the Project
 
