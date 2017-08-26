@@ -10,11 +10,12 @@ This game is built with React and Redux.
 2. The user enters guesses that are recorded until they find the hidden number. 
 3. Each time a user guesses, the user receives feedback indicating how close their guess is to the hidden number. 
 
-## Installation
+## Running the App
 
-The code uses npm to manage dependencies. Verify that you have the latest version of Node installed. 
+Use the deployed version of the app at [https://hot-cold-game-redux.herokuapp.com](https://hot-cold-game-redux.herokuapp.com). 
 
-1. Download the project, and install the dependencies using 'npm install'.
-2. Run `npm run build` before accessing the game. 
-3. Use a local server to run the game. You can use your own local server or type  `npm run serve` in the command line. The package comes with [http-server](https://www.npmjs.com/package/http-server) already set as a dev dependency. 
-4. If you decide to use the [http-server](https://www.npmjs.com/package/http-server) via the `npm run serve` command, you can access the game at [http://localhost:8080](http://localhost:8080). 
+Or, run the application locally:
+
+1. The code uses npm to manage dependencies. Verify that you have the latest version of Node installed. 
+2. Download the project, and install the dependencies using ```'npm install'```.
+3. Use a local server to run the game. 
